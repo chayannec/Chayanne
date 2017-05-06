@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <math.h>
+int n, i, j;
+void main ()
+ {
+ 	printf("Ingrese un numero:");
+ 	scanf("%d",&n);
+ 	
+ 	for (j=-n;j<=n;j++)
+ 		{
+ 			for (i=-n;i<=n;i++)
+ 			 	{
+ 			 		if (abs(i)+abs(j)>n || abs(i)==abs(j))
+ 			        {
+ 			         	printf("  ");
+ 			         }
+ 			         
+ 			         else 
+ 			         {
+ 			         	printf(" *");
+ 			   	      }
+ 			   	      
+ 			   	  }
+ 			 printf("\n");
+ 		}
+ } 
